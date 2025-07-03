@@ -1,4 +1,5 @@
 import Header from "@/components/Header/Header";
+import PageTransition from "@/components/PageTransition/PageTransition";
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
@@ -22,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${jetbrainsMono.className}  antialiased`}>
         <Header />
-        {children}
+        <PageTransition>{children}</PageTransition>
       </body>
     </html>
   );
