@@ -15,7 +15,7 @@ export default function Nav() {
           className={`${
             singleNav.path === pathname &&
             "text-amber-200 border-b-2 border-amber-200"
-          }`}
+          } capitalize font-medium hover:text-amber-200 transition-all`}
         >
           {singleNav.name}
         </Link>
