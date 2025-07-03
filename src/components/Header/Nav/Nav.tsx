@@ -5,7 +5,6 @@ import { NavData } from "./NavData/NavData";
 
 export default function Nav() {
   const pathname = usePathname();
-  console.log(pathname);
   return (
     <nav className="flex gap-8">
       {NavData.map((singleNav, index) => (
