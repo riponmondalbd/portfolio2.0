@@ -1,8 +1,8 @@
-import Stats from "@/components/Header/Stats/Stats";
-
 import Photo from "@/components/Home/Photo/Photo";
 import Social from "@/components/Home/Social/Social";
+import Stats from "@/components/Home/Stats/Stats";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { FiDownload } from "react-icons/fi";
 
 export default function Home() {
@@ -25,14 +25,21 @@ export default function Home() {
             {/* button and social */}
             {/* cv download button */}
             <div className="flex flex-col xl:flex-row  items-center gap-8">
-              <Button
-                variant={"outline"}
-                size={"lg"}
-                className="uppercase flex items-center gap-2"
+              <Link
+                href={
+                  "https://drive.google.com/file/d/1YrvdR6291jd8FgywZBvx0BU5MvfrbCNP/view"
+                }
+                target="_blank"
               >
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
-              </Button>
+                <Button
+                  variant={"outline"}
+                  size={"lg"}
+                  className="uppercase flex items-center gap-2 hover:transition-all duration-500"
+                >
+                  <span>Download CV</span>
+                  <FiDownload className="text-xl" />
+                </Button>
+              </Link>
 
               {/* social buttons */}
               <div className="mb-8 xl:mb-0">

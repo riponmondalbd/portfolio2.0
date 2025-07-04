@@ -32,6 +32,7 @@ export default function Social() {
         <Link
           key={index}
           href={item.path}
+          target="_blank"
           className="w-9 h-9 border border-amber-200 rounded-full flex justify-center items-center text-amber-200 text-base hover:bg-amber-200 hover:text-[#1c1b22] hover:transition-all duration-500"
         >
           {item.icon}
