@@ -13,7 +13,7 @@ export default function StairTransition() {
           <Stairs />
         </div>
         <motion.div
-          className="h-screen w-screen fixed bg-black top-0 pointer-events-none"
+          className="h-screen w-screen fixed bg-[#1c1b22] top-0 pointer-events-none"
           initial={{ opacity: 1 }}
           animate={{
             opacity: 0,
