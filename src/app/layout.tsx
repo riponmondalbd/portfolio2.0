@@ -1,5 +1,4 @@
 import Header from "@/components/Header/Header";
-
 import StairTransition from "@/components/animations/Effect/StairTransition";
 import PageTransition from "@/components/animations/PageTransition/PageTransition";
 import type { Metadata } from "next";
