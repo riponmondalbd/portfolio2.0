@@ -1,3 +1,5 @@
+import Stats from "@/components/Header/Stats/Stats";
+
 import Photo from "@/components/Home/Photo/Photo";
 import Social from "@/components/Home/Social/Social";
 import { Button } from "@/components/ui/button";
@@ -44,6 +46,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Stats />
     </section>
   );
 }
