@@ -2,7 +2,7 @@ export const ExperienceData = {
   icon: "",
   title: "My experience",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatem modi vel rerum! Vitae autem non eius minus, explicabo labore.",
+    "A journey through hands-on courses and certifications that shaped my skills as a full stack developer.",
   items: [
     {
       company: "Tech Solutions Inc",

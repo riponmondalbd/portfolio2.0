@@ -2,7 +2,7 @@ export const EducationData = {
   icon: "",
   title: "My education",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatem modi vel rerum! Vitae autem non eius minus, explicabo labore.",
+    "A journey through hands-on courses and certifications that shaped my skills as a full stack developer.",
   items: [
     {
       institution: "Programming Hero",
@@ -15,29 +15,19 @@ export const EducationData = {
       duration: "2022",
     },
     {
-      institution: "Online Course",
-      degree: "Programming Courser",
+      institution: "Udemy",
+      degree: "Next.js Web Application",
       duration: "2022",
     },
     {
-      institution: "Tech Institute",
-      degree: "Certified Web Developer",
+      institution: "FreeCodeCamp",
+      degree: "Javascript(ES6)",
       duration: "2021",
     },
     {
-      institution: "CodeAcademy",
-      degree: "Front-End Developer",
-      duration: "2022",
-    },
-    {
-      institution: "Online Course",
-      degree: "Programming Courser",
-      duration: "2022",
-    },
-    {
-      institution: "Tech Institute",
-      degree: "Certified Web Developer",
-      duration: "2021",
+      institution: "Daffodil International University",
+      degree: "Bachelor of Science in CSE",
+      duration: "2023",
     },
   ],
 };
