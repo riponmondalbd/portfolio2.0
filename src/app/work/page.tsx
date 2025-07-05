@@ -7,17 +7,32 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Projects } from "@/components/Work/Projects/Projects";
+import WorksSliderButtons from "@/components/Work/WorksSliderButtons/WorksSliderButtons";
 import { motion } from "motion/react";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import type { Swiper as SwiperClass } from "swiper";
+import "swiper/css";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function WorkPage() {
   const [project, setProject] = useState(Projects[0]);
+
+  const handleSlideChange = (swiper: SwiperClass) => {
+    // get current slide index
+    const currentIndex = swiper.activeIndex;
+    // update project state based on current slide index
+    setProject(Projects[currentIndex]);
+  };
   return (
     <motion.section
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      animate={{
+        opacity: 1,
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+      }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
       <div className="container mx-auto">
@@ -78,7 +93,34 @@ export default function WorkPage() {
               </div>
             </div>
           </div>
-          <div className="w-full xl:w-[50%]">slider</div>
+          <div className="w-full xl:w-[50%]">
+            <Swiper
+              spaceBetween={30}
+              slidesPerView={1}
+              className="xl:h-[520px] mb-12"
+              onSlideChange={handleSlideChange}
+            >
+              {Projects.map((project, index) => (
+                <SwiperSlide key={index} className="w-full">
+                  <div className="h-[300px] md:h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                    {/* overlay */}
+                    <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                    {/* image */}
+                    <div className="relative w-full h-full">
+                      <Image
+                        src={project.image}
+                        alt={project.category}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+              {/* slider button */}
+              <WorksSliderButtons containerStyles={} />
+            </Swiper>
+          </div>
         </div>
       </div>
     </motion.section>
