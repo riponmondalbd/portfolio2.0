@@ -18,8 +18,9 @@ export default function Home() {
               <span className="text-amber-200">Ripon Mondal</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at crafting elegant digital experiences and I am a
-              proficient in various programming language and technologies.
+              A web developer and a curious learner who loves building websites
+              and trying to fix critical errors. Although it&apos;s not always
+              enjoyable, I always try to do my best.
             </p>
 
             {/* button and social */}
