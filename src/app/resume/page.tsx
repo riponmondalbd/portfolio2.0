@@ -2,14 +2,21 @@
 
 import { motion } from "motion/react";
 import {
+  FaBootstrap,
   FaCss3,
   FaFigma,
+  FaGithub,
   FaHtml5,
   FaJs,
   FaNodeJs,
   FaReact,
 } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import {
+  SiExpress,
+  SiMongodb,
+  SiNextdotjs,
+  SiTailwindcss,
+} from "react-icons/si";
 
 import { getYearDifferenceFromDate } from "@/components/Home/Stats/YearCalculation/YearCalculation";
 import { EducationData } from "@/components/Resume/EducationData/EducationData";
@@ -71,7 +78,7 @@ export default function ResumePage() {
   const skillsData = {
     title: "My skills",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatem modi vel rerum! Vitae autem non eius minus, explicabo labore.",
+      "A diverse set of technical and creative skills built through real-world projects and continuous learning.",
     skillList: [
       {
         icon: <FaHtml5 />,
@@ -98,12 +105,28 @@ export default function ResumePage() {
         name: "tailwind.css",
       },
       {
+        icon: <FaBootstrap />,
+        name: "Bootstrap",
+      },
+      {
         icon: <FaNodeJs />,
         name: "node.js",
       },
       {
         icon: <FaFigma />,
         name: "Figma",
+      },
+      {
+        icon: <SiMongodb />,
+        name: "MongoDB",
+      },
+      {
+        icon: <SiExpress />,
+        name: "Express.js",
+      },
+      {
+        icon: <FaGithub />,
+        name: "Github",
       },
     ],
   };
@@ -119,11 +142,11 @@ export default function ResumePage() {
     >
       <div className="container mx-auto">
         <Tabs
-          defaultValue="experience"
+          defaultValue="education"
           className="flex flex-col xl:flex-row gap-[60px]"
         >
           <TabsList className="flex flex-col w-full max-w[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="experience">Experience</TabsTrigger>
+            {/* <TabsTrigger value="experience">Experience</TabsTrigger> */}
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
             <TabsTrigger value="about">About Me</TabsTrigger>
