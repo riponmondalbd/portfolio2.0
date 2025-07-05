@@ -51,9 +51,9 @@ export default function ContactPage() {
                 Let&apos;s work together
               </h3>
               <p className="text-white/60">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Explicabo necessitatibus labore temporibus ea et iste vero
-                nesciunt ex sit numquam.
+                A web developer and a curious learner who loves building
+                websites and trying to fix critical errors. Although it’s not
+                always enjoyable, I always try to do my best.
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
