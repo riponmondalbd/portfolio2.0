@@ -15,6 +15,7 @@ import { useState } from "react";
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 import type { Swiper as SwiperClass } from "swiper";
 import "swiper/css";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function WorkPage() {
@@ -97,6 +98,11 @@ export default function WorkPage() {
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              modules={[Autoplay]}
               className="xl:h-[520px] mb-12"
               onSlideChange={handleSlideChange}
             >
@@ -118,7 +124,7 @@ export default function WorkPage() {
                 </SwiperSlide>
               ))}
               {/* slider button */}
-              <WorksSliderButtons containerStyles={} />
+              <WorksSliderButtons />
             </Swiper>
           </div>
         </div>
