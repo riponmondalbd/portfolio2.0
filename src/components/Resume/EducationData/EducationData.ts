@@ -5,13 +5,13 @@ export const EducationData = {
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatem modi vel rerum! Vitae autem non eius minus, explicabo labore.",
   items: [
     {
-      institution: "Online Course",
-      degree: "Full Stack Development",
+      institution: "Programming Hero",
+      degree: "Complete Web Development",
       duration: "2023",
     },
     {
-      institution: "CodeAcademy",
-      degree: "Front-End Developer",
+      institution: "Udemy",
+      degree: "React.js For Beginners",
       duration: "2022",
     },
     {

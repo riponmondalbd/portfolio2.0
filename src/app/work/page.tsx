@@ -23,7 +23,7 @@ export default function WorkPage() {
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
-            <div>
+            <div className="flex flex-col gap-[30px] h-[50%]">
               {/* outline nav */}
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
@@ -39,6 +39,7 @@ export default function WorkPage() {
                 {project.stack.map((item, index) => (
                   <li key={index} className="text-xl text-amber-200">
                     {item.name}
+
                     {/* add coma nad also remove the last comma */}
                     {index !== project.stack.length - 1 && ","}
                   </li>
@@ -47,7 +48,7 @@ export default function WorkPage() {
               {/* border */}
               <div className="border border-white/20 "></div>
               {/* buttons */}
-              <div className="flex">
+              <div className="flex items-center gap-4">
                 {/* live project button */}
                 <Link href={project.live}>
                   <TooltipProvider delayDuration={100}>
