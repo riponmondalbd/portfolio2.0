@@ -98,4 +98,19 @@ export const Projects = [
     live: "https://latest-dragon-news.surge.sh",
     github: "https://github.com/riponmondalbd/book-review",
   },
+  {
+    num: "08",
+    category: "Fullstack",
+    title: "project 8",
+    description:
+      "Developed a fullstack website that facilitates show my project. It is a portfolio project.",
+    stack: [
+      { name: "react.js" },
+      { name: "Tailwind.css" },
+      { name: "firebase" },
+    ],
+    image: "/assets/projects/real-state.png",
+    live: "https://real-estate-50c3a.web.app/",
+    github: "https://github.com/riponmondalbd/real-estate",
+  },
 ];

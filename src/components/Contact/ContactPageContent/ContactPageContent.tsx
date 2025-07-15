@@ -14,7 +14,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { FaEnvelope, FaMapMarkedAlt, FaPhoneAlt } from "react-icons/fa";
-import Swal from "sweetalert2";
+import { Bounce, ToastContainer, toast } from "react-toastify";
 
 const Info = [
   {
@@ -64,13 +64,7 @@ export default function ContactPageContent() {
     });
 
     if (res.ok) {
-      Swal.fire({
-        position: "top",
-        icon: "success",
-        title: "Message sent successfully!",
-        showConfirmButton: false,
-        timer: 1500,
-      });
+      toast("Message sent successfully!");
       setFormData({
         firstName: "",
         lastName: "",
@@ -206,6 +200,19 @@ export default function ContactPageContent() {
           </div>
         </div>
       </div>
+      <ToastContainer
+        position="bottom-center"
+        autoClose={1500}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        transition={Bounce}
+      />
     </motion.section>
   );
 }
