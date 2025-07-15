@@ -28,7 +28,7 @@ export default function Home() {
             <div className="flex flex-col xl:flex-row  items-center gap-8">
               <Link
                 href={
-                  "https://drive.google.com/file/d/1YrvdR6291jd8FgywZBvx0BU5MvfrbCNP/view"
+                  "https://drive.google.com/drive/folders/1Ynu8DElNyvGStsfQpwcE-sV-TSxGVIRs?usp=sharing"
                 }
                 target="_blank"
               >
@@ -54,6 +54,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* stats content */}
       <Stats />
     </section>
   );
