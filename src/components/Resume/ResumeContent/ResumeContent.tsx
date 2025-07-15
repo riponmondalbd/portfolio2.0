@@ -37,7 +37,7 @@ export default function ResumeContent() {
   const aboutData = {
     title: "About me",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatem modi vel rerum! Vitae autem non eius minus, explicabo labore.",
+      "A web developer and a curious learner who loves building websites and trying to fix critical errors. Although it's not always enjoyable, I always try to do my best.",
     info: [
       {
         fieldName: "Name",
