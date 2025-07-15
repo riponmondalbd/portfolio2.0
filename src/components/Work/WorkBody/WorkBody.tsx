@@ -67,7 +67,7 @@ export default function WorkBody() {
               <div className="flex items-center gap-4">
                 {/* live project button */}
                 <Link href={project.live} target="_blank">
-                  <TooltipProvider delayDuration={100}>
+                  <TooltipProvider delayDuration={300}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
                         <BsArrowUpRight className="text-white text-3xl group-hover:text-amber-200" />
