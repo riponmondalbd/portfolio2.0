@@ -1,6 +1,7 @@
 import Header from "@/components/Header/Header";
 import StairTransition from "@/components/animations/Effect/StairTransition";
 import PageTransition from "@/components/animations/PageTransition/PageTransition";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
@@ -29,6 +30,7 @@ export default function RootLayout({
         <Header />
         <StairTransition />
         <PageTransition>{children}</PageTransition>
+        <SpeedInsights />
       </body>
     </html>
   );
