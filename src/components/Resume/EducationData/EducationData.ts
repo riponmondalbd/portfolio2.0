@@ -5,6 +5,11 @@ export const EducationData = {
     "A journey through hands-on courses and certifications that shaped my skills as a full stack developer.",
   items: [
     {
+      institution: "Knowledge Gate",
+      degree: "React and Redux",
+      duration: "2025",
+    },
+    {
       institution: "Programming Hero",
       degree: "Complete Web Development",
       duration: "2023",
@@ -20,9 +25,19 @@ export const EducationData = {
       duration: "2022",
     },
     {
+      institution: "Knowledge Gate",
+      degree: "Complete JAVASCRIPT",
+      duration: "2025",
+    },
+    {
       institution: "FreeCodeCamp",
       degree: "Javascript(ES6)",
       duration: "2021",
+    },
+    {
+      institution: "Knowledge Gate",
+      degree: "Complete CSS",
+      duration: "2025",
     },
     {
       institution: "Daffodil International University",
