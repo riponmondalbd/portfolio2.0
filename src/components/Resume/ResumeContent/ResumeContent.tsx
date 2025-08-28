@@ -12,10 +12,12 @@ import {
   FaReact,
 } from "react-icons/fa";
 import {
+  SiCanva,
   SiExpress,
   SiMongodb,
   SiNextdotjs,
   SiTailwindcss,
+  SiTypescript,
 } from "react-icons/si";
 
 import { getYearDifferenceFromDate } from "@/components/Home/Stats/YearCalculation/YearCalculation";
@@ -93,6 +95,11 @@ export default function ResumeContent() {
         name: "javascript",
       },
       {
+        icon: <SiTypescript />,
+        name: "typescript",
+      },
+
+      {
         icon: <FaReact />,
         name: "react.js",
       },
@@ -127,6 +134,10 @@ export default function ResumeContent() {
       {
         icon: <FaGithub />,
         name: "Github",
+      },
+      {
+        icon: <SiCanva />,
+        name: "Canva",
       },
     ],
   };
@@ -229,26 +240,28 @@ export default function ResumeContent() {
                   <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                     {skillsData.description}
                   </p>
-                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
-                    {skillsData.skillList.map((skill, index) => {
-                      return (
-                        <li key={index}>
-                          <TooltipProvider delayDuration={100}>
-                            <Tooltip>
-                              <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                                <div className="text-6xl group-hover:text-amber-200 transition-all duration-300">
-                                  {skill.icon}
-                                </div>
-                              </TooltipTrigger>
-                              <TooltipContent>
-                                <p className="capitalize">{skill.name}</p>
-                              </TooltipContent>
-                            </Tooltip>
-                          </TooltipProvider>
-                        </li>
-                      );
-                    })}
-                  </ul>
+                  <ScrollArea className="h-[400px]">
+                    <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                      {skillsData.skillList.map((skill, index) => {
+                        return (
+                          <li key={index}>
+                            <TooltipProvider delayDuration={100}>
+                              <Tooltip>
+                                <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                                  <div className="text-6xl group-hover:text-amber-200 transition-all duration-300">
+                                    {skill.icon}
+                                  </div>
+                                </TooltipTrigger>
+                                <TooltipContent>
+                                  <p className="capitalize">{skill.name}</p>
+                                </TooltipContent>
+                              </Tooltip>
+                            </TooltipProvider>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </ScrollArea>
                 </div>
               </div>
             </TabsContent>
