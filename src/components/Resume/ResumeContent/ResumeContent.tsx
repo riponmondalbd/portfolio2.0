@@ -15,7 +15,9 @@ import {
   SiCanva,
   SiExpress,
   SiMongodb,
+  SiMongoose,
   SiNextdotjs,
+  SiRedux,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
@@ -108,6 +110,10 @@ export default function ResumeContent() {
         name: "next.js",
       },
       {
+        icon: <SiRedux />,
+        name: "redux.js",
+      },
+      {
         icon: <SiTailwindcss />,
         name: "tailwind.css",
       },
@@ -126,6 +132,10 @@ export default function ResumeContent() {
       {
         icon: <SiMongodb />,
         name: "MongoDB",
+      },
+      {
+        icon: <SiMongoose />,
+        name: "Mongoose",
       },
       {
         icon: <SiExpress />,
