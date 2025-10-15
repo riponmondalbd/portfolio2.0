@@ -1,21 +1,13 @@
 export const Projects = [
   {
     num: "01",
-    category: "MERN Stack",
-    title: "project 1",
-    description:
-      "Developed a full MERN stack website where users can view restaurant menus and place orders, while admins can manage, update, delete, and deliver orders, as well as assign admin roles.",
-    stack: [
-      { name: "React.js" },
-      { name: "Tailwind.css" },
-      { name: "Node.js" },
-      { name: "Express.js" },
-      { name: "MongoDB" },
-      { name: "Firebase" },
-    ],
-    image: "/assets/projects/bistro-boss.png",
-    live: "https://bistro-boss-restaurant-b46d3.web.app/",
-    github: "https://github.com/riponmondalbd/bistro-boss-restaurant-v2",
+    category: "Full Stack",
+    title: "project 13",
+    description: "Developed a full stack Digital Click.",
+    stack: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }],
+    image: "/assets/projects/digital-clock.png",
+    live: "https://riponmondalbd.github.io/digital-clock/",
+    github: "https://github.com/riponmondalbd/digital-clock",
   },
   {
     num: "02",
@@ -38,8 +30,50 @@ export const Projects = [
   },
   {
     num: "03",
-    category: "Fullstack",
+    category: "MERN Stack",
     title: "project 3",
+    description:
+      "A full-stack doctor appointment system was developed, featuring distinct admin and user dashboards for handling users, doctors, and appointments.",
+    stack: [
+      { name: "React.js" },
+      { name: "Tailwind.css" },
+      { name: "Node.js" },
+      { name: "Express.js" },
+      { name: "MongoDB" },
+      { name: "Mongoose" },
+      { name: "JWT" },
+      { name: "Multer" },
+      { name: "Cloudinary" },
+      { name: "Bcrypt " },
+    ],
+    // image: "/assets/projects/poor-doct.png",
+    image: "/assets/projects/prescripto.png",
+    live: "https://prescripto-doct.vercel.app/",
+    github: "https://github.com/riponmondalbd/Prescripto",
+  },
+  {
+    num: "04",
+    category: "MERN Stack",
+    title: "project 4",
+    description:
+      "Developed a full MERN stack website where users can view restaurant menus and place orders, while admins can manage, update, delete, and deliver orders, as well as assign admin roles.",
+    stack: [
+      { name: "React.js" },
+      { name: "Tailwind.css" },
+      { name: "Node.js" },
+      { name: "Express.js" },
+      { name: "MongoDB" },
+      { name: "Firebase" },
+    ],
+    image: "/assets/projects/bistro-boss.png",
+    live: "https://bistro-boss-restaurant-b46d3.web.app/",
+    github: "https://github.com/riponmondalbd/bistro-boss-restaurant-v2",
+  },
+
+  {
+    num: "05",
+    category: "Fullstack",
+    title: "project 5",
     description:
       "Developed a fullstack website that facilitates show my project. It is a portfolio project.",
     stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
@@ -48,9 +82,9 @@ export const Projects = [
     github: "https://github.com/riponmondalbd/book-review",
   },
   {
-    num: "04",
+    num: "06",
     category: "Full Stack",
-    title: "project 4",
+    title: "project 6",
     description: "Developed a full stack dashboard based on shadcn.",
     stack: [{ name: "react.js" }, { name: "Tailwind.css" }, { name: "ShadCn" }],
     image: "/assets/projects/dashboard-by-shadcn.png",
@@ -58,9 +92,9 @@ export const Projects = [
     github: "https://github.com/riponmondalbd/dashboard-shadcn",
   },
   {
-    num: "05",
+    num: "07",
     category: "Frontend",
-    title: "project 5",
+    title: "project 7",
     description:
       "Developed a fullstack website that make to based on online e-news paper.",
     stack: [{ name: "React.js" }, { name: "Tailwind.css" }],
@@ -69,9 +103,9 @@ export const Projects = [
     github: "https://github.com/riponmondalbd/book-review",
   },
   {
-    num: "06",
+    num: "08",
     category: "Frontend",
-    title: "project 6",
+    title: "project 8",
     description:
       "Developed a fullstack website that facilitates manage book and also review system of books.",
     stack: [{ name: "React.js" }, { name: "Tailwind.css" }],
@@ -80,9 +114,9 @@ export const Projects = [
     github: "https://github.com/riponmondalbd/book-review",
   },
   {
-    num: "07",
+    num: "09",
     category: "Fullstack",
-    title: "project 7",
+    title: "project 9",
     description:
       "Built a full MERN stack job portal where users can view and apply for jobs, with permission-based access upon login. Each user has a custom dashboard to manage and track activity.",
     stack: [
@@ -98,9 +132,9 @@ export const Projects = [
     github: "https://github.com/riponmondalbd/job-portal",
   },
   {
-    num: "08",
+    num: "10",
     category: "Fullstack",
-    title: "project 8",
+    title: "project 10",
     description: "Developed a fullstack website is made for a real sate.",
     stack: [
       { name: "react.js" },
@@ -112,9 +146,9 @@ export const Projects = [
     github: "https://github.com/riponmondalbd/real-estate",
   },
   {
-    num: "09",
+    num: "11",
     category: "Fullstack",
-    title: "project 9",
+    title: "project 11",
     description:
       "Developed a fullstack website that facilitates show my project. It is a portfolio project.",
     stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
@@ -123,9 +157,9 @@ export const Projects = [
     github: "https://github.com/riponmondalbd/portfolio",
   },
   {
-    num: "10",
+    num: "12",
     category: "Frontend",
-    title: "project 10",
+    title: "project 12",
     description: "Developed a frontend website that made based on travelers.",
     stack: [
       { name: "react.js" },
@@ -137,9 +171,9 @@ export const Projects = [
     github: "https://github.com/riponmondalbd/travel-guru",
   },
   {
-    num: "11",
+    num: "13",
     category: "Frontend",
-    title: "project 11",
+    title: "project 13",
     description: "Developed a frontend website that made based on career hub.",
     stack: [
       { name: "react.js" },
@@ -151,9 +185,9 @@ export const Projects = [
     github: "https://github.com/riponmondalbd/brand-new-career-hub",
   },
   {
-    num: "12",
+    num: "14",
     category: "Full Stack",
-    title: "project 12",
+    title: "project 14",
     description: "Developed a full stack Discount Box.",
     stack: [{ name: "HTML" }, { name: "Tailwind.css" }, { name: "JavaScript" }],
     image: "/assets/projects/discount-box.png",
@@ -161,19 +195,9 @@ export const Projects = [
     github: "https://github.com/riponmondalbd/dicount-box",
   },
   {
-    num: "13",
+    num: "15",
     category: "Full Stack",
-    title: "project 13",
-    description: "Developed a full stack Digital Click.",
-    stack: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }],
-    image: "/assets/projects/digital-clock.png",
-    live: "https://riponmondalbd.github.io/digital-clock/",
-    github: "https://github.com/riponmondalbd/digital-clock",
-  },
-  {
-    num: "14",
-    category: "Full Stack",
-    title: "project 14",
+    title: "project 15",
     description: "Developed a full stack Analog Click.",
     stack: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }],
     image: "/assets/projects/analog-click.png",
