@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { useState } from "react";
 import { FaEnvelope, FaMapMarkedAlt, FaPhoneAlt } from "react-icons/fa";
 import { Bounce, ToastContainer, toast } from "react-toastify";
@@ -20,12 +21,16 @@ const Info = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone",
-    description: "+880 1956 149980",
+    description: <Link href={"tel:880 1956 149980"}>+880 1956 149980</Link>,
   },
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "contact.riponmondal@gmail.com",
+    description: (
+      <Link href={"mailto:contact.riponmondal@gmail.com"}>
+        contact.riponmondal@gmail.com
+      </Link>
+    ),
   },
   {
     icon: <FaMapMarkedAlt />,
