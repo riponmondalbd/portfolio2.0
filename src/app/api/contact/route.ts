@@ -22,7 +22,7 @@ export async function POST(req: Request) {
     });
 
     const ownerMailOptions = {
-      from: `"Portfolio Contact" <${process.env.EMAIL_USER}>`,
+      from: `"Ripon Mondal Portfolio Contact" <${process.env.EMAIL_USER}>`,
       to: process.env.EMAIL_USER,
       subject: `New Contact from ${body.firstName} ${body.lastName}`,
       text: `
@@ -37,13 +37,13 @@ Message: ${body.message}
     };
 
     const userMailOptions = {
-      from: `"Portfolio Contact" <${process.env.EMAIL_USER}>`,
+      from: `"Ripon Mondal" <${process.env.EMAIL_USER}>`,
       to: body.email, // Send to the user who filled the form
       subject: "Thank you for contacting us!",
       text: `
 Hi ${body.firstName},
 
-Thank you for contacting us. We have received your message and will get back to you shortly.
+Thank you for contacting me. I have received your message and will get back to you shortly.
 
 Here’s a copy of your message:
 
