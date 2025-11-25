@@ -21,7 +21,7 @@ export async function POST(req: Request) {
       },
     });
 
-    const mailOptions = {
+    const ownerMailOptions = {
       from: `"Portfolio Contact" <${process.env.EMAIL_USER}>`,
       to: process.env.EMAIL_USER,
       subject: `New Contact from ${body.firstName} ${body.lastName}`,
@@ -33,10 +33,33 @@ Email: ${body.email}
 Phone: ${body.phone || "N/A"}
 Service: ${body.service || "N/A"}
 Message: ${body.message}
-      `,
+  `,
     };
 
-    await transporter.sendMail(mailOptions);
+    const userMailOptions = {
+      from: `"Portfolio Contact" <${process.env.EMAIL_USER}>`,
+      to: body.email, // Send to the user who filled the form
+      subject: "Thank you for contacting us!",
+      text: `
+Hi ${body.firstName},
+
+Thank you for contacting us. We have received your message and will get back to you shortly.
+
+Here’s a copy of your message:
+
+Name: ${body.firstName} ${body.lastName}
+Email: ${body.email}
+Phone: ${body.phone || "N/A"}
+Service: ${body.service || "N/A"}
+Message: ${body.message}
+
+Best regards,
+Portfolio Team
+  `,
+    };
+
+    await transporter.sendMail(ownerMailOptions);
+    await transporter.sendMail(userMailOptions);
 
     return NextResponse.json({ message: "Email sent successfully" });
   } catch (error: unknown) {
