@@ -54,7 +54,7 @@ Service: ${body.service || "N/A"}
 Message: ${body.message}
 
 Best regards,
-Portfolio Team
+Ripon Mondal
   `,
     };
 
