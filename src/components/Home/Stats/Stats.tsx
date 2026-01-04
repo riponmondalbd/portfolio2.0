@@ -12,7 +12,7 @@ const GITHUB_ACCESS_TOKEN = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
 
 export default function Stats() {
   const [totalCommits, setTotalCommits] = useState<number | null>(null);
-  const yearOfExperience = getYearDifferenceFromDate("2022-01-01");
+  const yearOfExperience = getYearDifferenceFromDate("2025-01-01");
 
   useEffect(() => {
     async function fetchTotalCommits() {
