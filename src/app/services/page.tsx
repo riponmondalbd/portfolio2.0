@@ -6,5 +6,11 @@ export const metadata = {
 };
 
 export default function ServicesPage() {
-  return <ServicePageContent />;
+  return (
+    <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
+      <div className="container mx-auto">
+        <ServicePageContent />
+      </div>
+    </section>
+  );
 }
