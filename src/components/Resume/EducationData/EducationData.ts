@@ -5,6 +5,11 @@ export const EducationData = {
     "A journey through hands-on courses and certifications that shaped my skills as a full stack developer.",
   items: [
     {
+      institution: "Learn With Sumit",
+      degree: "Think in a redux way",
+      duration: "2026",
+    },
+    {
       institution: "Knowledge Gate",
       degree: "React and Redux",
       duration: "2025",

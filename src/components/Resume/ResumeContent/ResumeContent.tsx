@@ -35,7 +35,7 @@ import {
 } from "@/components/ui/tooltip";
 
 export default function ResumeContent() {
-  const yearOfExperience = getYearDifferenceFromDate("2022-01-01");
+  const yearOfExperience = getYearDifferenceFromDate("2025-01-01");
 
   // about data
   const aboutData = {
