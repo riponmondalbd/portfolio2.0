@@ -1,28 +1,6 @@
 "use client";
-
 import { motion } from "motion/react";
-import {
-  FaBootstrap,
-  FaCss3,
-  FaFigma,
-  FaGithub,
-  FaHtml5,
-  FaJs,
-  FaNodeJs,
-  FaReact,
-} from "react-icons/fa";
-import {
-  SiCanva,
-  SiExpress,
-  SiMongodb,
-  SiMongoose,
-  SiNextdotjs,
-  SiRedux,
-  SiTailwindcss,
-  SiTypescript,
-} from "react-icons/si";
 
-import { getYearDifferenceFromDate } from "@/components/Home/Stats/YearCalculation/YearCalculation";
 import { EducationData } from "@/components/Resume/EducationData/EducationData";
 import { ExperienceData } from "@/components/Resume/ExperienceData/ExperienceData";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -33,124 +11,12 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { aboutData } from "../AboutData/AboutData";
+import { skillsData } from "../SkillData/SkillData";
 
 export default function ResumeContent() {
-  const yearOfExperience = getYearDifferenceFromDate("2025-01-01");
-
   // about data
-  const aboutData = {
-    title: "About me",
-    description:
-      "A web developer and a curious learner who loves building websites and trying to fix critical errors. Although it's not always enjoyable, I always try to do my best.",
-    info: [
-      {
-        fieldName: "Name",
-        fieldValue: "Ripon Mondal",
-      },
-      {
-        fieldName: "Phone",
-        fieldValue: "+880 1956 149980",
-      },
-      {
-        fieldName: "Experience",
-        fieldValue: `${yearOfExperience}+ Years`,
-      },
-      {
-        fieldName: "GitHub",
-        fieldValue: "riponmondalbd",
-      },
-      {
-        fieldName: "Nationality",
-        fieldValue: "Bangladeshi",
-      },
-      {
-        fieldName: "Email",
-        fieldValue: "contact.riponmondal@gmail.com",
-      },
-      {
-        fieldName: "Freelance",
-        fieldValue: "Available",
-      },
-      {
-        fieldName: "Language",
-        fieldValue: "English, Bengali",
-      },
-    ],
-  };
 
-  // skills data
-  const skillsData = {
-    title: "My skills",
-    description:
-      "A diverse set of technical and creative skills built through real-world projects and continuous learning.",
-    skillList: [
-      {
-        icon: <FaHtml5 />,
-        name: "html 5",
-      },
-      {
-        icon: <FaCss3 />,
-        name: "css 3",
-      },
-      {
-        icon: <FaJs />,
-        name: "javascript",
-      },
-      {
-        icon: <SiTypescript />,
-        name: "typescript",
-      },
-
-      {
-        icon: <FaReact />,
-        name: "react.js",
-      },
-      {
-        icon: <SiNextdotjs />,
-        name: "next.js",
-      },
-      {
-        icon: <SiRedux />,
-        name: "redux.js",
-      },
-      {
-        icon: <SiTailwindcss />,
-        name: "tailwind.css",
-      },
-      {
-        icon: <FaBootstrap />,
-        name: "Bootstrap",
-      },
-      {
-        icon: <FaNodeJs />,
-        name: "node.js",
-      },
-      {
-        icon: <FaFigma />,
-        name: "Figma",
-      },
-      {
-        icon: <SiMongodb />,
-        name: "MongoDB",
-      },
-      {
-        icon: <SiMongoose />,
-        name: "Mongoose",
-      },
-      {
-        icon: <SiExpress />,
-        name: "Express.js",
-      },
-      {
-        icon: <FaGithub />,
-        name: "Github",
-      },
-      {
-        icon: <SiCanva />,
-        name: "Canva",
-      },
-    ],
-  };
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -253,13 +119,15 @@ export default function ResumeContent() {
                   <ScrollArea className="h-[400px]">
                     <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
                       {skillsData.skillList.map((skill, index) => {
+                        const Icon = skill.icon;
+
                         return (
                           <li key={index}>
                             <TooltipProvider delayDuration={100}>
                               <Tooltip>
                                 <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
                                   <div className="text-6xl group-hover:text-amber-200 transition-all duration-300">
-                                    {skill.icon}
+                                    <Icon />
                                   </div>
                                 </TooltipTrigger>
                                 <TooltipContent>

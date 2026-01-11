@@ -1,5 +1,6 @@
 "use client";
 
+import { skillsData } from "@/components/Resume/SkillData/SkillData";
 import { Projects } from "@/components/Work/Projects/Projects";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
@@ -59,7 +60,7 @@ export default function Stats() {
       text: "Projects completed",
     },
     {
-      num: 20,
+      num: skillsData.skillList.length,
       text: "Technologies mastered",
     },
     {
