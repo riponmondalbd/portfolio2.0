@@ -1,6 +1,4 @@
-import { getYearDifferenceFromDate } from "@/components/Home/Stats/YearCalculation/YearCalculation";
-
-const yearOfExperience = getYearDifferenceFromDate("2026-01-01");
+import { yearOfExperience } from "@/components/YearOfExperiences";
 
 export const aboutData = {
   title: "About me",

@@ -2,9 +2,9 @@
 
 import { skillsData } from "@/components/Resume/SkillData/SkillData";
 import { Projects } from "@/components/Work/Projects/Projects";
+import { yearOfExperience } from "@/components/YearOfExperiences";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
-import { getYearDifferenceFromDate } from "./YearCalculation/YearCalculation";
 
 const GITHUB_GRAPHQL_API = "https://api.github.com/graphql";
 const GITHUB_USERNAME = "riponmondalbd";
@@ -13,8 +13,6 @@ const GITHUB_ACCESS_TOKEN = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
 
 export default function Stats() {
   const [totalCommits, setTotalCommits] = useState<number | null>(null);
-
-  const yearOfExperience = getYearDifferenceFromDate("2026-01-01");
 
   useEffect(() => {
     async function fetchTotalCommits() {
